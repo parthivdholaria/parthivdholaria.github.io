@@ -16,7 +16,7 @@ main:
     url: /files/Parthiv_Resume.pdf
 
   - title: "Teaching"
-    url: /_teaching/OS_TA.md    
+    url: /teaching/OS_TA   
     
   # - title: "Guide"
   #   url: /markdown/
