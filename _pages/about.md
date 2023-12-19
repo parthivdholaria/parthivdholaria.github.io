@@ -40,19 +40,28 @@ Cheers !
 # My Projects
 
 1. Optical Character Recognition(OCR):
-   As a part of our machine learning course, in a group of 5 we were given a task to correctly classify the optical charcter dataset. The optical character consists of digits from 0-9 and alphabets A-Z.  
-   1. We performed various pre-processing techniques and Exploratory Data Analysis techniques to understand our data better.  
-   1. After this It was time to extract important features and start training our model and also analyse the performance by using k-fold analysis and other techniques to evaluate the performance of our model.  
-   1. We managed to get the 99.4 % accuracy for OCR. The model used was a multi-stacked model comprising of KNN, SVM, RandomForest.  
-   1. Here is the [link](https://github.com/parthivdholaria/ML_Project_OCR) for the entire code and report of our project.  
+   As a part of our machine learning course, in a group of 5 we were given a task to correctly classify the optical charcter dataset. The optical character consists of digits from 0-9 and alphabets A-Z.
+
+   1. We performed various pre-processing techniques and Exploratory Data Analysis techniques to understand our data better.
+   1. After this It was time to extract important features and start training our model and also analyse the performance by using k-fold analysis and other techniques to evaluate the performance of our model.
+   1. We managed to get the 99.4 % accuracy for OCR. The model used was a multi-stacked model comprising of KNN, SVM, RandomForest.
+   1. Here is the [link](https://github.com/parthivdholaria/ML_Project_OCR) for the entire code and report of our project.
 
 2. Online Retail Store
    A deployed Django Web Application. It was a self-learning project when I was trying to study how front-end communicates with the backend and the information is propogated back and forth.Here is the brief description:  
    2. A Django Web application deployed with the help of AWS.  
    2. Made use of HTML, CSS, Javascript on front end.  
-   2. Allows user to create account, user-verification, password reset, shipping facilities.
-   2. Paypal API for payment , cart functionality , track orders, shipping functionality.  
-   E. Here is the [link](https://github.com/parthivdholaria/OnlineRetailStore) for the entire code.  
+   2. Allows user to create account, user-verification, password reset, shipping facilities. 2. Paypal API for payment , cart functionality , track orders, shipping functionality.  
+   2. Here is the [link](https://github.com/parthivdholaria/OnlineRetailStore) for the entire code.  
+
+3. Tank Star Game
+A clone of the Tank Star game availabel on play store using JAVA libgdx library. The entire game was made keeping in mind the concepts of OOPS.Some key features of the games are:  
+3. Select Tanks.  
+3. Aim and Fire.  
+3. Control the power and decide the trajectory of the cannon.  
+3. Movements of the tanks and their speed control.  
+3. Load and Store of different games.  
+3. Here is the [link](https://github.com/parthivdholaria/AP-TankStars) of the game.  
 
 <!-- # A data-driven personal website
 
