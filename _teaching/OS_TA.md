@@ -2,7 +2,7 @@
 title: "Operating Systems Teaching Assistance Experience"
 collection: teaching
 type: "Undergraduate course"
-permalink: /teaching/OS_TA.md
+permalink: /teaching/OS_TA
 venue: "IIIT-D, Department CSE"
 date: 2023-08-07
 location: "New Delhi, India"
