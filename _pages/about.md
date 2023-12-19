@@ -27,7 +27,17 @@ In my free time , I mostly hang out with my friends and family. When it comes to
 
 Cheers !
 
-# A data-driven personal website
+# My achievements
+
+1. My biggest ever achievement was that, I was the highest scorer in 12th CBSE boards exams(94.2%) in my school and was 4rth in 10th CBSE exams.This lay the foundataion of never ending hardwork. This was like a foundation stone from where I never stopped working hard and took my academics very seriously. 
+
+2. In my college, We had many assignments but the Kaggle Challenges in our machine learning course were the most challenging. It was class about 170 students inlcuding B.TECH , M.TECH and PHDs. We were given a dataset[Google Speech Command Dataset] in which we had to predict the words said in the audio clips accuratly. I ranked 11th in the entire batch with an accuracy of 89.78% on unseen testing data. You can see the leaderboard yourself [here](https://www.kaggle.com/competitions/gaussian-mixture-models/leaderboard). My id is Parthiv A Dholaria. We were told to only use Gaussian Mixture model for classification and No deep learning models/techniques which made it very challenging.
+
+3. In another kaggle challenge on Human Activity Recognition from UCL. I ranked 17th in the entire batch with an accuracy of 59.798%. I had used KNN to get this accuracy. You can see the leaderbaord rankings [here](https://www.kaggle.com/competitions/unsupervised-learning-m2023/leaderboard). My ID is Parthiv A Dholaria.
+
+4. I am also privileged to be a part of two excellent clubs of my college. Firstly, GDSC i.e Google Developers student club. I developed interests in Web Developement in the first and second years of my B.Tech and I was able to crack the interview by show casing some of my projects in WebD. Secondly, Salt N' Pepper which is a food club of our college. The thing I like about this club is the ability to be creative from a very simple thing like food and make our audience feel happy and entertain them. I learned a lot from the events we conducted at Salt N' Pepper.
+
+<!-- # A data-driven personal website
 
 Like many other Jekyll-based GitHub Pages templates, academicpages makes you separate the website's content from its form. The content & metadata of your website are in structured markdown files, while various other files constitute the theme, specifying how to transform that content & metadata into HTML pages. You keep these various markdown (.md), YAML (.yml), HTML, and CSS files in a public GitHub repository. Each time you commit and push an update to the repository, the [GitHub pages](https://pages.github.com/) service creates static HTML pages based on these files, which are hosted on GitHub's servers free of charge.
 
@@ -63,4 +73,4 @@ Example: editing a markdown file for a talk
 
 ## For more info
 
-More info about configuring academicpages can be found in [the guide](https://academicpages.github.io/markdown/). The [guides for the Minimal Mistakes theme](https://mmistakes.github.io/minimal-mistakes/docs/configuration/) (which this theme was forked from) might also be helpful.
+More info about configuring academicpages can be found in [the guide](https://academicpages.github.io/markdown/). The [guides for the Minimal Mistakes theme](https://mmistakes.github.io/minimal-mistakes/docs/configuration/) (which this theme was forked from) might also be helpful. -->
