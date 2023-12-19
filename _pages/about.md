@@ -40,7 +40,11 @@ Cheers !
 # My Projects
 
 1. Optical Character Recognition(OCR):
-   As a part of our machine learning course, in a group of 5 we were given a task to correctly classify the optical charcter dataset. The optical character consists of digits from 0-9 and alphabets A-Z.\A. We performed various pre-processing techniques and Exploratory Data Analysis techniques to understand our data better.\B. After this It was time to extract important features and start training our model and also analyse the performance by using k-fold analysis and other techniques to evaluate the performance of our model.\C. We managed to get the 99.4 % accuracy for OCR. The model used was a multi-stacked model comprising of KNN, SVM, RandomForest. \D. Here is the [link](https://github.com/parthivdholaria/ML_Project_OCR) for the entire code and report of our project.
+   As a part of our machine learning course, in a group of 5 we were given a task to correctly classify the optical charcter dataset. The optical character consists of digits from 0-9 and alphabets A-Z.  
+   1. A. We performed various pre-processing techniques and Exploratory Data Analysis techniques to understand our data better.  
+   1. B. After this It was time to extract important features and start training our model and also analyse the performance by using k-fold analysis and other techniques to evaluate the performance of our model.  
+   1. C. We managed to get the 99.4 % accuracy for OCR. The model used was a multi-stacked model comprising of KNN, SVM, RandomForest.  
+   1. D. Here is the [link](https://github.com/parthivdholaria/ML_Project_OCR) for the entire code and report of our project.  
 
 2. Online Retail Store
    A deployed Django Web Application. It was a self-learning project when I was trying to study how front-end communicates with the backend and the information is propogated back and forth.
