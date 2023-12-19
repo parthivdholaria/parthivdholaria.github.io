@@ -57,12 +57,12 @@ Cheers !
 
 3. Tank Star Game
    A clone of the Tank Star game availabel on play store using JAVA libgdx library. The entire game was made keeping in mind the concepts of OOPS.Some key features of the games are:  
-  3. Select Tanks.  
-  3. Aim and Fire.  
-  3. Control the power and decide the trajectory of the cannon.    
-  3. Movements of the tanks and their speed control.  
-  3. Load and Store of different games.  
-  3. Here is the [link](https://github.com/parthivdholaria/AP-TankStars) of the game.  
+   3. Select Tanks.  
+   3. Aim and Fire.  
+   3. Control the power and decide the trajectory of the cannon.    
+   3. Movements of the tanks and their speed control.  
+   3. Load and Store of different games.  
+   3. Here is the [link](https://github.com/parthivdholaria/AP-TankStars) of the game.  
 
 <!-- # A data-driven personal website
 
