@@ -8,8 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-![😄](/
-images/memes.jpg){: .align-right width="300px"}
+![😄](/images/memes.jpg){: .align-right width="300px"}
 🧑‍💻 I am a CSE undergraduate student at IIIT-Delhi batch of 2025.
 
 📝 My area of interest are Machine Learning and its application.
