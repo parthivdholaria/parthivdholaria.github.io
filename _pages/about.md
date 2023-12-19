@@ -37,6 +37,27 @@ Cheers !
 
 4. I am also privileged to be a part of two excellent clubs of my college. Firstly, GDSC i.e Google Developers student club. I developed interests in Web Developement in the first and second years of my B.Tech and I was able to crack the interview by show casing some of my projects in WebD. Secondly, Salt N' Pepper which is a food club of our college. The thing I like about this club is the ability to be creative from a very simple thing like food and make our audience feel happy and entertain them. I learned a lot from the events we conducted at Salt N' Pepper.
 
+
+# My Projects 
+
+1. Optical Character Recognition(OCR):
+As a part of our machine learning course, in a group of 5 we were given a task to correctly classify the optical charcter dataset. The optical character consists of digits from 0-9 and alphabets A-Z.
+          A. We performed various pre-processing techniques and Exploratory Data Analysis techniques to understand our data better
+          B. After this It was time to extract important features and start training our model and also analyse the performance by using k-fold analysis and other techniques to evaluate the performance of our model.
+          C. We managed to get the 99.4 % accuracy for OCR. The model used was a multi-stacked model comprising of KNN, SVM, RandomForest.
+          D. Here is the [link](https://github.com/parthivdholaria/ML_Project_OCR) for the entire code and report of our project.
+
+2. Online Retail Store
+A deployed Django Web Application. It was a self-learning project when I was trying to study how front-end communicates with the backend and the information is propogated back and forth.
+Here is the brief description:
+          A. A Django Web application deployed with the help of AWS.
+          B. Made use of HTML, CSS, Javascript on front end.
+          C. Allows user to create account, user-verification, password reset, shipping facilities.
+          D.Paypal API for payment , cart functionality , track orders, shipping functionality.
+          E. Here is the [link](https://github.com/parthivdholaria/OnlineRetailStore) for the entire code.
+
+
+
 <!-- # A data-driven personal website
 
 Like many other Jekyll-based GitHub Pages templates, academicpages makes you separate the website's content from its form. The content & metadata of your website are in structured markdown files, while various other files constitute the theme, specifying how to transform that content & metadata into HTML pages. You keep these various markdown (.md), YAML (.yml), HTML, and CSS files in a public GitHub repository. Each time you commit and push an update to the repository, the [GitHub pages](https://pages.github.com/) service creates static HTML pages based on these files, which are hosted on GitHub's servers free of charge.
