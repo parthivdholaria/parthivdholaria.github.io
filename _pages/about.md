@@ -18,8 +18,8 @@ Natural Language Processing.
 
 ⌘ I have also interest in Security and systems(Thanks to Computer Networks, Wireless Networks and Operating Systems).
 
-
 # About Me
+
 Hello Everyone !
 I am a B-TECH 3rd year CSE student here at IIIT-Delhi. I hold a strong command in CS funadmentals like Operating systems, Advance Programming , Computer Networks , Analysis and Design of Algorithms , DBMS , Data structures and Algorithms etc.
 I am an enthusiast when it comes to Machine Learning and Developement. I started of my college journey by studying Web Developement and am currently looking to explore ML and the various applications it brings to the table. I also developed a taste in Security and would love to explore it somewhere in the future.
@@ -29,7 +29,7 @@ Cheers !
 
 # My achievements
 
-1. My biggest ever achievement was that, I was the highest scorer in 12th CBSE boards exams(94.2%) in my school and was 4rth in 10th CBSE exams.This lay the foundataion of never ending hardwork. This was like a foundation stone from where I never stopped working hard and took my academics very seriously. 
+1. My biggest ever achievement was that, I was the highest scorer in 12th CBSE boards exams(94.2%) in my school and was 4rth in 10th CBSE exams.This lay the foundataion of never ending hardwork. This was like a foundation stone from where I never stopped working hard and took my academics very seriously.
 
 2. In my college, We had many assignments but the Kaggle Challenges in our machine learning course were the most challenging. It was class about 170 students inlcuding B.TECH , M.TECH and PHDs. We were given a dataset[Google Speech Command Dataset] in which we had to predict the words said in the audio clips accuratly. I ranked 11th in the entire batch with an accuracy of 89.78% on unseen testing data. You can see the leaderboard yourself [here](https://www.kaggle.com/competitions/gaussian-mixture-models/leaderboard). My id is Parthiv A Dholaria. We were told to only use Gaussian Mixture model for classification and No deep learning models/techniques which made it very challenging.
 
@@ -37,25 +37,19 @@ Cheers !
 
 4. I am also privileged to be a part of two excellent clubs of my college. Firstly, GDSC i.e Google Developers student club. I developed interests in Web Developement in the first and second years of my B.Tech and I was able to crack the interview by show casing some of my projects in WebD. Secondly, Salt N' Pepper which is a food club of our college. The thing I like about this club is the ability to be creative from a very simple thing like food and make our audience feel happy and entertain them. I learned a lot from the events we conducted at Salt N' Pepper.
 
-
-# My Projects 
+# My Projects
 
 1. Optical Character Recognition(OCR):
-As a part of our machine learning course, in a group of 5 we were given a task to correctly classify the optical charcter dataset. The optical character consists of digits from 0-9 and alphabets A-Z.  
-1. We performed various pre-processing techniques and Exploratory Data Analysis techniques to understand our data better.  
-1. After this It was time to extract important features and start training our model and also analyse the performance by using k-fold analysis and other techniques to evaluate the performance of our model.  
-1. We managed to get the 99.4 % accuracy for OCR. The model used was a multi-stacked model comprising of KNN, SVM, RandomForest.  
-1. Here is the [link](https://github.com/parthivdholaria/ML_Project_OCR) for the entire code and report of our project.  
-          
+   As a part of our machine learning course, in a group of 5 we were given a task to correctly classify the optical charcter dataset. The optical character consists of digits from 0-9 and alphabets A-Z.\A. We performed various pre-processing techniques and Exploratory Data Analysis techniques to understand our data better.\B. After this It was time to extract important features and start training our model and also analyse the performance by using k-fold analysis and other techniques to evaluate the performance of our model.\C. We managed to get the 99.4 % accuracy for OCR. The model used was a multi-stacked model comprising of KNN, SVM, RandomForest. \D. Here is the [link](https://github.com/parthivdholaria/ML_Project_OCR) for the entire code and report of our project.
 
 2. Online Retail Store
-A deployed Django Web Application. It was a self-learning project when I was trying to study how front-end communicates with the backend and the information is propogated back and forth.
-Here is the brief description:
-2. A Django Web application deployed with the help of AWS.
-2. Made use of HTML, CSS, Javascript on front end.
-2. Allows user to create account, user-verification, password reset, shipping facilities.
-2.Paypal API for payment , cart functionality , track orders, shipping functionality.
-2. Here is the [link](https://github.com/parthivdholaria/OnlineRetailStore) for the entire code.
+   A deployed Django Web Application. It was a self-learning project when I was trying to study how front-end communicates with the backend and the information is propogated back and forth.
+   Here is the brief description:
+   A. A Django Web application deployed with the help of AWS.
+   B. Made use of HTML, CSS, Javascript on front end.
+   C. Allows user to create account, user-verification, password reset, shipping facilities.
+   D.Paypal API for payment , cart functionality , track orders, shipping functionality.
+   E. Here is the [link](https://github.com/parthivdholaria/OnlineRetailStore) for the entire code.
 
 <!-- # A data-driven personal website
 
