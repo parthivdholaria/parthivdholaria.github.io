@@ -51,18 +51,26 @@ Cheers !
    A deployed Django Web Application. It was a self-learning project when I was trying to study how front-end communicates with the backend and the information is propogated back and forth.Here is the brief description:  
    2. A Django Web application deployed with the help of AWS.  
    2. Made use of HTML, CSS, Javascript on front end.  
-   2. Allows user to create account, user-verification, password reset, shipping facilities.   
-   2. Paypal API for payment , cart functionality , track orders, shipping functionality.   
-   2. Here is the [link](https://github.com/parthivdholaria/OnlineRetailStore) for the entire code.  
+   2. Allows user to create account, user-verification, password reset, shipping facilities.  
+   2. Paypal API for payment , cart functionality , track orders, shipping functionality.  
+   2. Here is the [link](https://github.com/parthivdholaria/OnlineRetailStore) for the entire code.
 
 3. Tank Star Game
    A clone of the Tank Star game availabel on play store using JAVA libgdx library. The entire game was made keeping in mind the concepts of OOPS.Some key features of the games are:  
    3. Select Tanks.  
    3. Aim and Fire.  
-   3. Control the power and decide the trajectory of the cannon.    
+   3. Control the power and decide the trajectory of the cannon.  
    3. Movements of the tanks and their speed control.  
    3. Load and Store of different games.  
-   3. Here is the [link](https://github.com/parthivdholaria/AP-TankStars) of the game.  
+   3. Here is the [link](https://github.com/parthivdholaria/AP-TankStars) of the game.
+
+4. Figma Prototype
+   A working prototype of an App Edusort. It is a app that effectively manages a students academic shortcomings and challenges with assistances. Here is a brief description:  
+   4. See important notifications about assignments/quizzes.  
+   4. Chat Service.  
+   4. Time Table for the classes.  
+   4. High fidelity protoype with animation.  
+   4. Here is the [link](https://github.com/parthivdholaria/Figma-IHCI-Project).
 
 <!-- # A data-driven personal website
 
