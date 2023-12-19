@@ -6,9 +6,6 @@ main:
   # - title: "Talks"
   #   url: /talks/    
 
-  # - title: "Teaching"
-  #   url: /teaching/    
-    
   # - title: "Portfolio"
   #   url: /portfolio/
         
@@ -17,6 +14,9 @@ main:
     
   - title: "CV"
     url: /files/Parthiv_Resume.pdf
+
+  - title: "Teaching"
+    url: /teaching/OS_TA.md    
     
   # - title: "Guide"
   #   url: /markdown/
