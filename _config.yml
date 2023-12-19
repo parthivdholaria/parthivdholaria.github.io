@@ -81,13 +81,13 @@ analytics:
 # Site Author
 author:
   name             : "Parthiv Dholaria"
-  avatar           : "profile.png"
-  bio              : "Your biography for the left-hand sidebar"
-  location         : "Location"
+  avatar           : "website_profile.jpg"
+  bio              : "CSE undergrad at IIIT-D'25. Passionate about coding"
+  location         : "New Delhi"
   employer         :
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
-  googlescholar    : "http://yourfullgooglescholarurl.com"
-  email            :
+  pubmed           : #""
+  googlescholar    : #""
+  email            :  "parthiv21078@iiitd.ac.in"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
@@ -96,20 +96,20 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "academicpages"
+  github           : "parthivdholaria"
   google_plus      :
   keybase          :
-  instagram        :
+  instagram        : "prthv77"
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         :
-  orcid            : "http://orcid.org/yourorcidurl"
+  linkedin         : "https://www.linkedin.com/in/parthiv-dholaria-249a0b1ab/"
+  orcid            : #""
   pinterest        :
   soundcloud       :
   stackoverflow    : # http://stackoverflow.com/users/123456/username
   steam            :
   tumblr           :
-  twitter          : "replacethistwitterhandle"
+  twitter          : #""
   vine             :
   weibo            :
   xing             :
