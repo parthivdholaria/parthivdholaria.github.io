@@ -2,7 +2,7 @@
 title: "NA"
 collection: teaching
 type: "Workshop"
-permalink: /teaching/2015-spring-teaching-1
+permalink: /teaching/OS_TA
 venue: "IIIT-D, Department CSE"
 date: 2023-01-01
 location: "City, Country"
