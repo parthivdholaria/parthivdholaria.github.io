@@ -39,47 +39,57 @@ Cheers !
 
 # My Projects
 
-1. Optical Character Recognition(OCR):
+1. TECPEC (Textual Emotion-Cause Pair Extraction in Conversations)
    As a part of our machine learning course, in a group of 5 we were given a task to correctly classify the optical charcter dataset. The optical character consists of digits from 0-9 and alphabets A-Z.
 
-   1. We performed various pre-processing techniques and Exploratory Data Analysis techniques to understand our data better.
-   1. After this It was time to extract important features and start training our model and also analyse the performance by using k-fold analysis and other techniques to evaluate the performance of our model.
-   1. We managed to get the 99.4 % accuracy for OCR. The model used was a multi-stacked model comprising of KNN, SVM, RandomForest.
-   1. Here is the [link](https://github.com/parthivdholaria/ML_Project_OCR) for the entire code and report of our project.
+   1. This project addresses SemEval-2024 Task 3, Subtask 1 which focuses on extracting emotion-cause pairs from conversations.
+   1. A two-step pipeline architecture is introduced to identify emotion-cause pairs.
+   1. The first step involves emotion classification for the utterances using a novel architecture. This approach was compared with OpenAI’s GPT 4.
+   1. The second step utilizes a Question-Answer model to identify causes for the target utterance based on the identified emotions.
+   1. The project ranked 5th in Subtask 1 CodaLab Competition for the SemEval-2024 Task3.
+   1. Here is the [link](https://github.com/parthivdholaria/TECPEC) for the entire code and report of our project.
 
-2. Online Retail Store
+2. Optical Character Recognition(OCR):
+   As a part of our machine learning course, in a group of 5 we were given a task to correctly classify the optical charcter dataset. The optical character consists of digits from 0-9 and alphabets A-Z.
+
+   2. We performed various pre-processing techniques and Exploratory Data Analysis techniques to understand our data better.
+   2. After this It was time to extract important features and start training our model and also analyse the performance by using k-fold analysis and other techniques to evaluate the performance of our model.
+   2. We managed to get the 99.4 % accuracy for OCR. The model used was a multi-stacked model comprising of KNN, SVM, RandomForest.
+   2. Here is the [link](https://github.com/parthivdholaria/ML_Project_OCR) for the entire code and report of our project.
+
+3. Online Retail Store
    A deployed Django Web Application. It was a self-learning project when I was trying to study how front-end communicates with the backend and the information is propogated back and forth.Here is the brief description:  
-   2. A Django Web application deployed with the help of AWS.  
-   2. Made use of HTML, CSS, Javascript on front end.  
-   2. Allows user to create account, user-verification, password reset, shipping facilities.  
-   2. Paypal API for payment , cart functionality , track orders, shipping functionality.  
-   2. Here is the [link](https://github.com/parthivdholaria/OnlineRetailStore) for the entire code.
+   3. A Django Web application deployed with the help of AWS.  
+   3. Made use of HTML, CSS, Javascript on front end.  
+   3. Allows user to create account, user-verification, password reset, shipping facilities.  
+   3. Paypal API for payment , cart functionality , track orders, shipping functionality.  
+   3. Here is the [link](https://github.com/parthivdholaria/OnlineRetailStore) for the entire code.
 
-3. Tank Star Game
+4. Tank Star Game
    A clone of the Tank Star game availabel on play store using JAVA libgdx library. The entire game was made keeping in mind the concepts of OOPS.Some key features of the games are:  
-   3. Select Tanks.  
-   3. Aim and Fire.  
-   3. Control the power and decide the trajectory of the cannon.  
-   3. Movements of the tanks and their speed control.  
-   3. Load and Store of different games.  
-   3. Here is the [link](https://github.com/parthivdholaria/AP-TankStars) of the game.
+   4. Select Tanks.  
+   4. Aim and Fire.  
+   4. Control the power and decide the trajectory of the cannon.  
+   4. Movements of the tanks and their speed control.  
+   4. Load and Store of different games.  
+   4. Here is the [link](https://github.com/parthivdholaria/AP-TankStars) of the game.
 
-4. Figma Prototype
+5. Figma Prototype
    A working prototype of an App Edusort. It is a app that effectively manages a students academic shortcomings and challenges with assistances. Here is a brief description:  
-   4. See important notifications about assignments/quizzes.  
-   4. Chat Service.  
-   4. Time Table for the classes.  
-   4. High fidelity protoype with animation.  
-   4. Here is the [link](https://github.com/parthivdholaria/Figma-IHCI-Project).
+   5. See important notifications about assignments/quizzes.  
+   5. Chat Service.  
+   5. Time Table for the classes.  
+   5. High fidelity protoype with animation.  
+   5. Here is the [link](https://github.com/parthivdholaria/Figma-IHCI-Project).
 
-5. Custom Linux Shell
+6. Custom Linux Shell
    A custom made linux shell programmed in C that supports the following commands with 2 supported flags:
-   5. pwd.  
-   5. ls and cd.  
-   5. rm cat date.  
-   5. clear and exit.  
-   5. made using execl system call. Implimented using threads and fork system call.
-   5. Here is the [link](https://github.com/parthivdholaria/OS/tree/main/Assignment2).
+   6. pwd.  
+   6. ls and cd.  
+   6. rm cat date.  
+   6. clear and exit.  
+   6. made using execl system call. Implimented using threads and fork system call.
+   6. Here is the [link](https://github.com/parthivdholaria/OS/tree/main/Assignment2).
 
 <!-- # A data-driven personal website
 
