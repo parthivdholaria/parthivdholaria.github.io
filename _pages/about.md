@@ -8,24 +8,22 @@ redirect_from:
   - /about.html
 ---
 
-![😄](/images/memes.jpg){: .align-right width="300px"}
-🧑‍💻 I am a CSE undergraduate student at IIIT-Delhi batch of 2025.
+<link rel="stylesheet" href="/assets/css/ml-intro-card.css">
 
-📝 My area of interest are Machine Learning and its application.
-
-⛳️ I am currently doing my studies in the field of Deep Learning, Computer Vision,
-Natural Language Processing.
-
-⌘ I have also interest in Security and systems(Thanks to Computer Networks, Wireless Networks and Operating Systems).
-
-# About Me
-
-Hello Everyone !
-I am a B-TECH 3rd year CSE student here at IIIT-Delhi. I hold a strong command in CS funadmentals like Operating systems, Advance Programming , Computer Networks , Analysis and Design of Algorithms , DBMS , Data structures and Algorithms etc.
-I am an enthusiast when it comes to Machine Learning and Developement. I started of my college journey by studying Web Developement and am currently looking to explore ML and the various applications it brings to the table. I also developed a taste in Security and would love to explore it somewhere in the future.
-In my free time , I mostly hang out with my friends and family. When it comes to sports , I consider myself a decent bowler. A die-hard cricket fan and will always support India no matter what. Also if anyone is interested in playing FIFA, I would always love to play a match with you .
-
-Cheers !
+<div class="ml-intro-card">
+  <h1 class="ml-intro-title">
+    <span class="title-part1">Trust me, I'm a</span>
+    <span class="title-part2">machine learning engineer.</span>
+  </h1>
+  
+  <p class="ml-intro-description">
+    I'm a CSE undergraduate from IIIT-Delhi who believes that if you can't explain your model to a five-year-old, you probably don't understand it yourself. I specialize in machine learning, deep learning, NLP and computer vision, but I'm also that person who gets genuinely excited about feature engineering and thinks overfitting is just the model being too eager to please. I've dabbled in everything from Gaussian Mixture Models to neural networks, and I'm convinced that the best algorithms are the ones that work when you're not looking.
+  </p>
+  
+  <p class="ml-intro-attribution">~ A machine learning Engineer, Optimising life at every epoch</p>
+  
+  <p class="ml-intro-tagline">Turning data into decisions, one model at a time 🧠 (ChatGPT)</p>
+</div>
 
 # My achievements
 
