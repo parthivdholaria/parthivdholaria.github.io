@@ -29,13 +29,29 @@ Cheers !
 
 # My achievements
 
-1. My biggest ever achievement was that, I was the highest scorer in 12th CBSE boards exams(94.2%) in my school and was 4rth in 10th CBSE exams.This lay the foundataion of never ending hardwork. This was like a foundation stone from where I never stopped working hard and took my academics very seriously.
+<link rel="stylesheet" href="/assets/css/achievement-cards.css">
 
-2. In my college, We had many assignments but the Kaggle Challenges in our machine learning course were the most challenging. It was class about 170 students inlcuding B.TECH , M.TECH and PHDs. We were given a dataset[Google Speech Command Dataset] in which we had to predict the words said in the audio clips accuratly. I ranked 11th in the entire batch with an accuracy of 89.78% on unseen testing data. You can see the leaderboard yourself [here](https://www.kaggle.com/competitions/gaussian-mixture-models/leaderboard). My id is Parthiv A Dholaria. We were told to only use Gaussian Mixture model for classification and No deep learning models/techniques which made it very challenging.
-
-3. In another kaggle challenge on Human Activity Recognition from UCL. I ranked 17th in the entire batch with an accuracy of 59.798%. I had used KNN to get this accuracy. You can see the leaderbaord rankings [here](https://www.kaggle.com/competitions/unsupervised-learning-m2023/leaderboard). My ID is Parthiv A Dholaria.
-
-4. I am also privileged to be a part of two excellent clubs of my college. Firstly, GDSC i.e Google Developers student club. I developed interests in Web Developement in the first and second years of my B.Tech and I was able to crack the interview by show casing some of my projects in WebD. Secondly, Salt N' Pepper which is a food club of our college. The thing I like about this club is the ability to be creative from a very simple thing like food and make our audience feel happy and entertain them. I learned a lot from the events we conducted at Salt N' Pepper.
+<div class="achievement-cards-container">
+  <div class="achievement-card">
+    <div class="achievement-number">1</div>
+    <p class="achievement-text">My biggest ever achievement was that, I was the highest scorer in 12th CBSE boards exams(94.2%) in my school and was 4th in 10th CBSE exams. This lay the foundation of never ending hardwork. This was like a foundation stone from where I never stopped working hard and took my academics very seriously.</p>
+  </div>
+  
+  <div class="achievement-card">
+    <div class="achievement-number">2</div>
+    <p class="achievement-text">In my college, We had many assignments but the Kaggle Challenges in our machine learning course were the most challenging. It was class about 170 students including B.TECH, M.TECH and PHDs. We were given a dataset[Google Speech Command Dataset] in which we had to predict the words said in the audio clips accurately. I ranked 11th in the entire batch with an accuracy of 89.78% on unseen testing data. You can see the leaderboard yourself <a href="https://www.kaggle.com/competitions/gaussian-mixture-models/leaderboard">here</a>. My id is Parthiv A Dholaria. We were told to only use Gaussian Mixture model for classification and No deep learning models/techniques which made it very challenging.</p>
+  </div>
+  
+  <div class="achievement-card">
+    <div class="achievement-number">3</div>
+    <p class="achievement-text">In another kaggle challenge on Human Activity Recognition from UCL. I ranked 17th in the entire batch with an accuracy of 59.798%. I had used KNN to get this accuracy. You can see the leaderboard rankings <a href="https://www.kaggle.com/competitions/unsupervised-learning-m2023/leaderboard">here</a>. My ID is Parthiv A Dholaria.</p>
+  </div>
+  
+  <div class="achievement-card">
+    <div class="achievement-number">4</div>
+    <p class="achievement-text">I am also privileged to be a part of two excellent clubs of my college. Firstly, GDSC i.e Google Developers student club. I developed interests in Web Development in the first and second years of my B.Tech and I was able to crack the interview by showcasing some of my projects in WebD. Secondly, Salt N' Pepper which is a food club of our college. The thing I like about this club is the ability to be creative from a very simple thing like food and make our audience feel happy and entertain them. I learned a lot from the events we conducted at Salt N' Pepper.</p>
+  </div>
+</div>
 
 <!-- # A data-driven personal website
 
