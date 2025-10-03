@@ -37,60 +37,6 @@ Cheers !
 
 4. I am also privileged to be a part of two excellent clubs of my college. Firstly, GDSC i.e Google Developers student club. I developed interests in Web Developement in the first and second years of my B.Tech and I was able to crack the interview by show casing some of my projects in WebD. Secondly, Salt N' Pepper which is a food club of our college. The thing I like about this club is the ability to be creative from a very simple thing like food and make our audience feel happy and entertain them. I learned a lot from the events we conducted at Salt N' Pepper.
 
-# My Projects
-
-1. TECPEC (Textual Emotion-Cause Pair Extraction in Conversations)
-   As a part of our machine learning course, in a group of 5 we were given a task to correctly classify the optical charcter dataset. The optical character consists of digits from 0-9 and alphabets A-Z.
-
-   1. This project addresses SemEval-2024 Task 3, Subtask 1 which focuses on extracting emotion-cause pairs from conversations.
-   1. A two-step pipeline architecture is introduced to identify emotion-cause pairs.
-   1. The first step involves emotion classification for the utterances using a novel architecture. This approach was compared with OpenAI’s GPT 4.
-   1. The second step utilizes a Question-Answer model to identify causes for the target utterance based on the identified emotions.
-   1. The project ranked 5th in Subtask 1 CodaLab Competition for the SemEval-2024 Task3.
-   1. Here is the [link](https://github.com/parthivdholaria/TECPEC) for the entire code and report of our project.
-
-2. Optical Character Recognition(OCR):
-   As a part of our machine learning course, in a group of 5 we were given a task to correctly classify the optical charcter dataset. The optical character consists of digits from 0-9 and alphabets A-Z.
-
-   2. We performed various pre-processing techniques and Exploratory Data Analysis techniques to understand our data better.
-   2. After this It was time to extract important features and start training our model and also analyse the performance by using k-fold analysis and other techniques to evaluate the performance of our model.
-   2. We managed to get the 99.4 % accuracy for OCR. The model used was a multi-stacked model comprising of KNN, SVM, RandomForest.
-   2. Here is the [link](https://github.com/parthivdholaria/ML_Project_OCR) for the entire code and report of our project.
-
-3. Online Retail Store
-   A deployed Django Web Application. It was a self-learning project when I was trying to study how front-end communicates with the backend and the information is propogated back and forth.Here is the brief description:  
-   3. A Django Web application deployed with the help of AWS.  
-   3. Made use of HTML, CSS, Javascript on front end.  
-   3. Allows user to create account, user-verification, password reset, shipping facilities.  
-   3. Paypal API for payment , cart functionality , track orders, shipping functionality.  
-   3. Here is the [link](https://github.com/parthivdholaria/OnlineRetailStore) for the entire code.
-
-4. Tank Star Game
-   A clone of the Tank Star game availabel on play store using JAVA libgdx library. The entire game was made keeping in mind the concepts of OOPS.Some key features of the games are:  
-   4. Select Tanks.  
-   4. Aim and Fire.  
-   4. Control the power and decide the trajectory of the cannon.  
-   4. Movements of the tanks and their speed control.  
-   4. Load and Store of different games.  
-   4. Here is the [link](https://github.com/parthivdholaria/AP-TankStars) of the game.
-
-5. Figma Prototype
-   A working prototype of an App Edusort. It is a app that effectively manages a students academic shortcomings and challenges with assistances. Here is a brief description:  
-   5. See important notifications about assignments/quizzes.  
-   5. Chat Service.  
-   5. Time Table for the classes.  
-   5. High fidelity protoype with animation.  
-   5. Here is the [link](https://github.com/parthivdholaria/Figma-IHCI-Project).
-
-6. Custom Linux Shell
-   A custom made linux shell programmed in C that supports the following commands with 2 supported flags:
-   6. pwd.  
-   6. ls and cd.  
-   6. rm cat date.  
-   6. clear and exit.  
-   6. made using execl system call. Implimented using threads and fork system call.
-   6. Here is the [link](https://github.com/parthivdholaria/OS/tree/main/Assignment2).
-
 <!-- # A data-driven personal website
 
 Like many other Jekyll-based GitHub Pages templates, academicpages makes you separate the website's content from its form. The content & metadata of your website are in structured markdown files, while various other files constitute the theme, specifying how to transform that content & metadata into HTML pages. You keep these various markdown (.md), YAML (.yml), HTML, and CSS files in a public GitHub repository. Each time you commit and push an update to the repository, the [GitHub pages](https://pages.github.com/) service creates static HTML pages based on these files, which are hosted on GitHub's servers free of charge.
