@@ -29,6 +29,36 @@ redirect_from:
 
 <link rel="stylesheet" href="/assets/css/achievement-cards.css">
 
+<script>
+function toggleCard(button) {
+  const card = button.parentElement;
+  const isExpanded = card.classList.contains('expanded');
+  
+  // Close all other expanded cards
+  document.querySelectorAll('.achievement-card.expanded').forEach(expandedCard => {
+    if (expandedCard !== card) {
+      expandedCard.classList.remove('expanded');
+      const btn = expandedCard.querySelector('.view-more-btn');
+      if (btn) {
+        btn.textContent = 'View More';
+        btn.classList.remove('expanded');
+      }
+    }
+  });
+  
+  // Toggle current card
+  if (isExpanded) {
+    card.classList.remove('expanded');
+    button.textContent = 'View More';
+    button.classList.remove('expanded');
+  } else {
+    card.classList.add('expanded');
+    button.textContent = 'View Less';
+    button.classList.add('expanded');
+  }
+}
+</script>
+
 <div class="achievement-cards-container">
   <div class="achievement-card">
     <div class="achievement-number">1</div>
@@ -54,33 +84,6 @@ redirect_from:
     <button class="view-more-btn" onclick="toggleCard(this)">View More</button>
   </div>
 </div>
-
-<script>
-function toggleCard(button) {
-  const card = button.parentElement;
-  const isExpanded = card.classList.contains('expanded');
-  
-  // Close all other expanded cards
-  document.querySelectorAll('.achievement-card.expanded').forEach(expandedCard => {
-    if (expandedCard !== card) {
-      expandedCard.classList.remove('expanded');
-      expandedCard.querySelector('.view-more-btn').textContent = 'View More';
-      expandedCard.querySelector('.view-more-btn').classList.remove('expanded');
-    }
-  });
-  
-  // Toggle current card
-  if (isExpanded) {
-    card.classList.remove('expanded');
-    button.textContent = 'View More';
-    button.classList.remove('expanded');
-  } else {
-    card.classList.add('expanded');
-    button.textContent = 'View Less';
-    button.classList.add('expanded');
-  }
-}
-</script>
 
 <!-- # A data-driven personal website
 
