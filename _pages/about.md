@@ -22,7 +22,7 @@ redirect_from:
   
   <p class="ml-intro-attribution">~ I believe a decreasing loss curve is more pleasing then Sydney Sweeny.</p>
   
-  <p class="ml-intro-tagline">Turning data into decisions, one model at a time 🧠 (ChatGPT)</p>
+  <p class="ml-intro-tagline">Turning data into decisions, one epoch at a time 🧠 (ChatGPT)</p>
 </div>
 
 # My achievements
