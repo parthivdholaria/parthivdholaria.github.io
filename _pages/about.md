@@ -17,7 +17,7 @@ redirect_from:
   </h1>
   
   <p class="ml-intro-description">
-    I'm a CSE undergraduate from IIIT-Delhi who believes that if you can't explain your model to a five-year-old, you probably don't understand it yourself. I specialize in machine learning, deep learning, NLP and computer vision, but I'm also that person who gets genuinely excited about feature engineering and thinks overfitting is just the model being too eager to please. I've dabbled in everything from Gaussian Mixture Models to neural networks, and I'm convinced that the best algorithms are the ones that work when you're not looking.
+    I'm a CSE undergraduate from IIIT-Delhi who believes that if you can't explain your model to a five-year-old, you probably don't understand it yourself. I specialize in ML, DL, NLP and computer vision, but I'm also that person who likes overfitting beacuse it is just the model being too eager to please. I've dabbled in everything from Gaussian Mixture Models to neural networks, and I'm convinced that the best algorithms are the ones that work when you're not looking. I believe a decreasing loss curve is more pleasing then Sydney Sweeny. 
   </p>
   
   <p class="ml-intro-attribution">~ A machine learning Engineer, Optimising life at every epoch</p>

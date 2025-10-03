@@ -45,12 +45,81 @@
   flex-shrink: 0;
   cursor: pointer;
   transform: translateY(0) scale(1);
+  overflow: hidden;
 }
 
 .achievement-card:hover {
   transform: translateY(-15px) scale(1.05);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
   z-index: 10;
+}
+
+.achievement-card.expanded {
+  width: 500px;
+  height: auto;
+  min-height: 300px;
+  z-index: 20;
+  transform: translateY(-20px) scale(1.08);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+}
+
+.achievement-text {
+  font-style: italic;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+  transform: skew(-2deg, 0deg);
+  text-align: justify;
+  margin: 0;
+  position: relative;
+  z-index: 2;
+  max-height: 120px;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.achievement-card.expanded .achievement-text {
+  max-height: none;
+  transform: skew(0deg, 0deg);
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.view-more-btn {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  background: linear-gradient(45deg, #4a90e2, #357abd);
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 16px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  opacity: 0;
+  transform: translateY(10px);
+  z-index: 3;
+}
+
+.achievement-card:hover .view-more-btn {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.view-more-btn:hover {
+  background: linear-gradient(45deg, #357abd, #2c5aa0);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(74, 144, 226, 0.3);
+}
+
+.view-more-btn.expanded {
+  background: linear-gradient(45deg, #e74c3c, #c0392b);
+}
+
+.view-more-btn.expanded:hover {
+  background: linear-gradient(45deg, #c0392b, #a93226);
 }
 
 .achievement-card::before {
@@ -75,17 +144,6 @@
   opacity: 0.3;
 }
 
-.achievement-text {
-  font-style: italic;
-  font-size: 14px;
-  line-height: 1.6;
-  color: #333;
-  transform: skew(-2deg, 0deg);
-  text-align: justify;
-  margin: 0;
-  position: relative;
-  z-index: 2;
-}
 
 .achievement-number {
   position: absolute;
