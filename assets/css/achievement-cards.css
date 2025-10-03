@@ -2,16 +2,17 @@
 .achievement-cards-container {
   position: relative;
   width: 100%;
-  height: 280px;
+  min-height: 280px;
+  height: auto;
   overflow-x: auto;
-  overflow-y: hidden;
+  overflow-y: visible;
   margin: 40px 0;
   background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
   border-radius: 20px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
   padding: 20px;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 20px;
   scroll-behavior: smooth;
 }
@@ -33,10 +34,12 @@
 .achievement-card {
   position: relative;
   width: 320px;
-  height: 220px;
+  min-height: 220px;
+  height: auto;
   background: rgba(255, 255, 255, 0.95);
   border-radius: 15px;
   padding: 25px;
+  padding-bottom: 50px;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.2);
@@ -44,8 +47,6 @@
   transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   flex-shrink: 0;
   cursor: pointer;
-  transform: translateY(0) scale(1);
-  overflow: hidden;
 }
 
 .achievement-card:hover {
@@ -56,11 +57,14 @@
 
 .achievement-card.expanded {
   width: 500px;
-  height: auto;
   min-height: 300px;
-  z-index: 20;
-  transform: translateY(-20px) scale(1.08);
+  z-index: 20 !important;
+  transform: translateY(-20px) scale(1.08) !important;
   box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+}
+
+.achievement-card.expanded:hover {
+  transform: translateY(-20px) scale(1.08) !important;
 }
 
 .achievement-text {
@@ -75,14 +79,19 @@
   z-index: 2;
   max-height: 120px;
   overflow: hidden;
-  transition: max-height 0.3s ease;
+  transition: all 0.4s ease;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
 }
 
 .achievement-card.expanded .achievement-text {
-  max-height: none;
+  max-height: 1000px;
   transform: skew(0deg, 0deg);
   font-size: 15px;
   line-height: 1.7;
+  -webkit-line-clamp: unset;
+  display: block;
 }
 
 .view-more-btn {
@@ -100,10 +109,11 @@
   transition: all 0.3s ease;
   opacity: 0;
   transform: translateY(10px);
-  z-index: 3;
+  z-index: 10;
 }
 
-.achievement-card:hover .view-more-btn {
+.achievement-card:hover .view-more-btn,
+.achievement-card.expanded .view-more-btn {
   opacity: 1;
   transform: translateY(0);
 }
@@ -116,6 +126,7 @@
 
 .view-more-btn.expanded {
   background: linear-gradient(45deg, #e74c3c, #c0392b);
+  opacity: 1;
 }
 
 .view-more-btn.expanded:hover {
@@ -131,6 +142,7 @@
   color: #4a90e2;
   font-family: serif;
   opacity: 0.3;
+  z-index: 1;
 }
 
 .achievement-card::after {
@@ -142,8 +154,8 @@
   color: #4a90e2;
   font-family: serif;
   opacity: 0.3;
+  z-index: 1;
 }
-
 
 .achievement-number {
   position: absolute;
@@ -160,6 +172,7 @@
   font-weight: bold;
   font-size: 14px;
   box-shadow: 0 3px 10px rgba(74, 144, 226, 0.3);
+  z-index: 5;
 }
 
 /* Animation keyframes */
@@ -174,27 +187,7 @@
   }
 }
 
-@keyframes fadeInUp {
-  0% {
-    transform: translateY(30px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-@keyframes pulse {
-  0%, 100% {
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-  }
-  50% {
-    box-shadow: 0 12px 35px rgba(74, 144, 226, 0.2);
-  }
-}
-
-/* Card entrance animations */
+/* Card entrance animations - NO CONTINUOUS ANIMATIONS */
 .achievement-card:nth-child(1) {
   animation: slideInFromLeft 0.8s ease-out 0.2s both;
 }
@@ -211,50 +204,63 @@
   animation: slideInFromLeft 0.8s ease-out 0.8s both;
 }
 
-/* Subtle continuous animation */
-.achievement-card {
-  animation: fadeInUp 0.6s ease-out both, pulse 4s ease-in-out 2s infinite;
+/* Remove animation after entrance to prevent conflicts */
+.achievement-card.expanded,
+.achievement-card.expanded:hover {
+  animation: none !important;
 }
 
 /* Responsive design */
 @media (max-width: 768px) {
   .achievement-cards-container {
-    height: 260px;
+    min-height: 260px;
     padding: 15px;
     gap: 15px;
   }
   
   .achievement-card {
     width: 280px;
-    height: 200px;
+    min-height: 200px;
     padding: 20px;
+    padding-bottom: 50px;
   }
   
   .achievement-text {
     font-size: 13px;
   }
+  
+  .achievement-card.expanded {
+    width: 400px;
+  }
 }
 
 @media (max-width: 480px) {
   .achievement-cards-container {
-    height: 240px;
+    min-height: 240px;
     padding: 10px;
     gap: 10px;
   }
   
   .achievement-card {
     width: 250px;
-    height: 180px;
+    min-height: 180px;
     padding: 15px;
+    padding-bottom: 45px;
   }
   
   .achievement-text {
     font-size: 12px;
+    max-height: 100px;
+    -webkit-line-clamp: 4;
   }
   
   .achievement-number {
     width: 25px;
     height: 25px;
     font-size: 12px;
+  }
+  
+  .achievement-card.expanded {
+    width: 280px;
   }
 }
