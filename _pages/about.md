@@ -17,10 +17,10 @@ redirect_from:
   </h1>
   
   <p class="ml-intro-description">
-    I'm a CSE undergraduate from IIIT-Delhi who believes that if you can't explain your model to a five-year-old, you probably don't understand it yourself. I specialize in ML, DL, NLP and computer vision, but I'm also that person who likes overfitting beacuse it is just the model being too eager to please. I've dabbled in everything from Gaussian Mixture Models to neural networks, and I'm convinced that the best algorithms are the ones that work when you're not looking. I believe a decreasing loss curve is more pleasing then Sydney Sweeny. 
+    I'm a CSE undergraduate from IIIT-Delhi who believes that if you can't explain your model to a five-year-old, you probably don't understand it yourself. I specialize in ML, DL, NLP and computer vision, but I'm also that person who likes overfitting beacuse it is just the model being too eager to please. I've dabbled in everything from Gaussian Mixture Models to neural networks, and I'm convinced that the best algorithms are the ones that work when you're not looking.  
   </p>
   
-  <p class="ml-intro-attribution">~ A machine learning Engineer, Optimising life at every epoch</p>
+  <p class="ml-intro-attribution">~ I believe a decreasing loss curve is more pleasing then Sydney Sweeny.</p>
   
   <p class="ml-intro-tagline">Turning data into decisions, one model at a time 🧠 (ChatGPT)</p>
 </div>
@@ -33,23 +33,54 @@ redirect_from:
   <div class="achievement-card">
     <div class="achievement-number">1</div>
     <p class="achievement-text">My biggest ever achievement was that, I was the highest scorer in 12th CBSE boards exams(94.2%) in my school and was 4th in 10th CBSE exams. This lay the foundation of never ending hardwork. This was like a foundation stone from where I never stopped working hard and took my academics very seriously.</p>
+    <button class="view-more-btn" onclick="toggleCard(this)">View More</button>
   </div>
   
   <div class="achievement-card">
     <div class="achievement-number">2</div>
     <p class="achievement-text">In my college, We had many assignments but the Kaggle Challenges in our machine learning course were the most challenging. It was class about 170 students including B.TECH, M.TECH and PHDs. We were given a dataset[Google Speech Command Dataset] in which we had to predict the words said in the audio clips accurately. I ranked 11th in the entire batch with an accuracy of 89.78% on unseen testing data. You can see the leaderboard yourself <a href="https://www.kaggle.com/competitions/gaussian-mixture-models/leaderboard">here</a>. My id is Parthiv A Dholaria. We were told to only use Gaussian Mixture model for classification and No deep learning models/techniques which made it very challenging.</p>
+    <button class="view-more-btn" onclick="toggleCard(this)">View More</button>
   </div>
   
   <div class="achievement-card">
     <div class="achievement-number">3</div>
     <p class="achievement-text">In another kaggle challenge on Human Activity Recognition from UCL. I ranked 17th in the entire batch with an accuracy of 59.798%. I had used KNN to get this accuracy. You can see the leaderboard rankings <a href="https://www.kaggle.com/competitions/unsupervised-learning-m2023/leaderboard">here</a>. My ID is Parthiv A Dholaria.</p>
+    <button class="view-more-btn" onclick="toggleCard(this)">View More</button>
   </div>
   
   <div class="achievement-card">
     <div class="achievement-number">4</div>
     <p class="achievement-text">I am also privileged to be a part of two excellent clubs of my college. Firstly, GDSC i.e Google Developers student club. I developed interests in Web Development in the first and second years of my B.Tech and I was able to crack the interview by showcasing some of my projects in WebD. Secondly, Salt N' Pepper which is a food club of our college. The thing I like about this club is the ability to be creative from a very simple thing like food and make our audience feel happy and entertain them. I learned a lot from the events we conducted at Salt N' Pepper.</p>
+    <button class="view-more-btn" onclick="toggleCard(this)">View More</button>
   </div>
 </div>
+
+<script>
+function toggleCard(button) {
+  const card = button.parentElement;
+  const isExpanded = card.classList.contains('expanded');
+  
+  // Close all other expanded cards
+  document.querySelectorAll('.achievement-card.expanded').forEach(expandedCard => {
+    if (expandedCard !== card) {
+      expandedCard.classList.remove('expanded');
+      expandedCard.querySelector('.view-more-btn').textContent = 'View More';
+      expandedCard.querySelector('.view-more-btn').classList.remove('expanded');
+    }
+  });
+  
+  // Toggle current card
+  if (isExpanded) {
+    card.classList.remove('expanded');
+    button.textContent = 'View More';
+    button.classList.remove('expanded');
+  } else {
+    card.classList.add('expanded');
+    button.textContent = 'View Less';
+    button.classList.add('expanded');
+  }
+}
+</script>
 
 <!-- # A data-driven personal website
 
