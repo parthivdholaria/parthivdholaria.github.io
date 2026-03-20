@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSIRO Biomass Kaggle Experience | Parthiv Dholaria</title>
+    <meta name="description" content="A deep dive into the challenges and our approach for the CSIRO Biomass Image-to-Biomass Kaggle competition.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="scrolled">
+        <div class="container nav-container">
+            <a href="../index.html" class="nav-logo">PD</a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="../index.html#about">About</a></li>
+                <li><a href="../index.html#experience">Experience</a></li>
+                <li><a href="../index.html#research">Research</a></li>
+                <li><a href="../index.html#projects">Projects</a></li>
+                <li><a href="../index.html#blog">Blog</a></li>
+                <li><a href="../index.html#skills">Skills</a></li>
+                <li><a href="../index.html#contact" class="nav-cta">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Article -->
+    <article class="blog-post">
+        <div class="blog-post-container">
+
+            <!-- Back link -->
+            <a href="../index.html#blog" class="blog-back-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+                Back to all posts
+            </a>
+
+            <!-- Header -->
+            <header class="blog-post-header">
+                <span class="blog-tag">Kaggle Competition</span>
+                <h1>My Experience in the CSIRO Biomass Estimation Kaggle Competition</h1>
+                <div class="blog-post-meta">
+                    <span class="blog-post-date">January 2025</span>
+                    <span class="blog-post-divider">&middot;</span>
+                    <span>5 min read</span>
+                    <span class="blog-post-divider">&middot;</span>
+                    <span>With <strong>Dhvanil Sheth</strong></span>
+                </div>
+            </header>
+
+            <!-- Content -->
+            <div class="blog-post-body">
+                <p class="blog-lead">
+                    I recently took part in the <a href="https://www.kaggle.com/competitions/csiro-biomass/overview" target="_blank" rel="noopener">CSIRO Biomass Image-to-Biomass Kaggle competition</a> along with my teammate Dhvanil Sheth. Here's a deep dive into the challenges we faced and how we tackled them.
+                </p>
+
+                <h2>The Competition</h2>
+                <p>
+                    We were given a dataset of images captured from grasslands across <strong>4 states in Australia</strong>, covering a wide range of plant species and tropical conditions. The task was to predict 5 biomass content labels, each ranging from 0 to 1.
+                </p>
+                <p>
+                    Sounds like a straightforward regression task, right? But as we dug deeper into the dataset, we uncovered several significant challenges.
+                </p>
+
+                <h2>Key Challenges</h2>
+
+                <div class="blog-challenge">
+                    <div class="blog-challenge-number">1</div>
+                    <div class="blog-challenge-content">
+                        <h3>Image Preprocessing Complexity</h3>
+                        <p>Figuring out which preprocessing techniques to apply to handle <strong>variable lighting</strong> and <strong>inconsistent camera angles</strong>. We also had to filter out bad examples that would hurt model training.</p>
+                    </div>
+                </div>
+
+                <div class="blog-challenge">
+                    <div class="blog-challenge-number">2</div>
+                    <div class="blog-challenge-content">
+                        <h3>Physical Constraints on Labels</h3>
+                        <p>The target labels had physical constraints that needed to be baked into the model training. For example, <code>Label Z = Label X + Label Y</code>. Ignoring these constraints would produce physically impossible predictions.</p>
+                    </div>
+                </div>
+
+                <div class="blog-challenge">
+                    <div class="blog-challenge-number">3</div>
+                    <div class="blog-challenge-content">
+                        <h3>Metadata Dependency</h3>
+                        <p>Metadata like <strong>location of plant, state, and date</strong> provided a huge performance boost during training &mdash; but they were <em>not available during testing</em>. This was arguably the biggest hint and challenge of the competition.</p>
+                    </div>
+                </div>
+
+                <div class="blog-challenge">
+                    <div class="blog-challenge-number">4</div>
+                    <div class="blog-challenge-content">
+                        <h3>Arguably Small Dataset</h3>
+                        <p>The dataset had only <strong>1,162 images total</strong>. CNN-based models typically require more images to perform well, so there was a real risk of overfitting on the majority species class.</p>
+                    </div>
+                </div>
+
+                <div class="blog-challenge">
+                    <div class="blog-challenge-number">5</div>
+                    <div class="blog-challenge-content">
+                        <h3>Target Imbalance &amp; Variance</h3>
+                        <p>Certain classes like <strong>Clover</strong> were sparse with low variance, while other classes had very high variance. This made it difficult to train a single model that performed well across all targets.</p>
+                    </div>
+                </div>
+
+                <h2>Our Approach</h2>
+
+                <div class="blog-approach">
+                    <div class="blog-approach-number">01</div>
+                    <div class="blog-approach-content">
+                        <h3>Classical Image Preprocessing</h3>
+                        <p>We found that classical preprocessing techniques worked best: improving contrast using <strong>CLAHE</strong>, cropping, and <strong>HSV scale conversions</strong> helped address the variable lighting and camera angle challenges effectively.</p>
+                    </div>
+                </div>
+
+                <div class="blog-approach">
+                    <div class="blog-approach-number">02</div>
+                    <div class="blog-approach-content">
+                        <h3>Constrained Output Layer</h3>
+                        <p>Instead of predicting all 5 labels independently, we only predicted <strong>3 labels in the final output layer</strong> and derived the constrained labels mathematically. This was fed to the loss function and improved our final score by <strong>3%</strong>.</p>
+                    </div>
+                </div>
+
+                <div class="blog-approach">
+                    <div class="blog-approach-number">03</div>
+                    <div class="blog-approach-content">
+                        <h3>Teacher-Student Distillation</h3>
+                        <p>This was our key insight. We used a <strong>teacher-student distillation</strong> setup where:</p>
+                        <ul>
+                            <li>The <strong>teacher</strong> was trained with metadata + a large DINOv2 backbone</li>
+                            <li>The <strong>student</strong> learned to be confident in predictions using signals from both ground truth and the teacher's predictions</li>
+                        </ul>
+                        <p>As expected, the teacher achieved very good validation metrics, while the student typically scored lower &mdash; which was expected behavior since it was a lightweight model with a weighted loss function balancing pseudo-labels from the teacher and ground truth.</p>
+                    </div>
+                </div>
+
+                <div class="blog-approach">
+                    <div class="blog-approach-number">04</div>
+                    <div class="blog-approach-content">
+                        <h3>K-Fold Validation with TTA</h3>
+                        <p>We experimented with our own <strong>custom folds for K-Fold cross-validation</strong> combined with <strong>test time augmentation (TTA)</strong>. Our final predictions were the average across all folds and augmentations.</p>
+                    </div>
+                </div>
+
+                <div class="blog-approach">
+                    <div class="blog-approach-number">05</div>
+                    <div class="blog-approach-content">
+                        <h3>Per-Target Normalization &amp; Weighted Metrics</h3>
+                        <p>We applied <strong>per-target normalization</strong> for every fold and used a <strong>weighted R2 metric</strong> to evaluate model training, ensuring balanced performance across all biomass targets.</p>
+                    </div>
+                </div>
+
+                <div class="blog-links-box">
+                    <h3>Links</h3>
+                    <div class="blog-links-list">
+                        <a href="https://medium.com/@parth.dholariya9221/predicting-pasture-biomass-with-ai-our-journey-in-the-csiro-kaggle-competition-37abc27a6c84" target="_blank" rel="noopener" class="blog-ext-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                            Read our detailed Medium article
+                        </a>
+                        <a href="https://www.kaggle.com/competitions/csiro-biomass/overview" target="_blank" rel="noopener" class="blog-ext-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                            View the Kaggle competition
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </article>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-container">
+            <p>&copy; 2025 Parthiv Dholaria. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile nav toggle
+        const navToggle = document.getElementById('navToggle');
+        const navLinks = document.getElementById('navLinks');
+        navToggle.addEventListener('click', () => {
+            navToggle.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                navToggle.classList.remove('active');
+                navLinks.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>
